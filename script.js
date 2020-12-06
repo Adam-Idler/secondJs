@@ -49,7 +49,7 @@ todoControl.addEventListener('submit', function(event) {
         value: headerInput.value,
         completed: false,
     };
-    locStor.push(newTodo);
+    if (newTodo.value) locStor.push(newTodo);
     render();
 });
 
